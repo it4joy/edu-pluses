@@ -6,7 +6,9 @@ calc int logarithm on base 2;
 returns biggest exp less/equal to 'test_num';
 */
 
-int res, mid_val, remainder;
+int res = 0;
+int mid_val = 0;
+int remainder = 0;
 
 int log2(int test) {
   mid_val = test;
@@ -23,20 +25,5 @@ int log2(int test) {
     }
   }
   cout << res << endl;
-}
-
-int main() {
-  int test_amount, test_num;
-
-  cin >> test_amount;
-
-  for (int i = 0; i < test_amount; ++i) {
-    cin >> test_num;
-    if ((test_num >= 1) && (test_num < 1000000000)) {
-      log2(test_num);
-    }
-  }
-
-  return 0;
 }
 
